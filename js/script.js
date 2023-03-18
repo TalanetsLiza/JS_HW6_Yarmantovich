@@ -50,5 +50,17 @@
         sum += Math.pow(arr[i], 3);
     }
     console.log(Math.sqrt(sum));
-    
+
+}
+
+{
+    // TASK 5
+    console.log("\n");
+
+    const a = 3;
+    const b = 5;
+    const c = Math.abs(a - b);
+
+    console.log(c);
+
 }
