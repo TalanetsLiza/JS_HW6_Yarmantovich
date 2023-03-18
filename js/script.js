@@ -80,3 +80,13 @@
     console.log(`${hour}:${minute}:${second} ${day}.${month}.${year}`)
 
 }
+
+{
+    // TASK 7
+    console.log("\n");
+
+    const str = "aa aba abba abbba abca abea";
+    const regex = str.match(/ab+a/gi);
+    console.log(regex)
+
+}
