@@ -64,3 +64,19 @@
     console.log(c);
 
 }
+
+{
+    // TASK 6
+    console.log("\n");
+
+    const dateNow = new Date();
+    const hour = dateNow.getHours().toString().padStart(2, "0");
+    const minute = dateNow.getMinutes().toString().padStart(2, "0");
+    const second = dateNow.getSeconds().toString().padStart(2, "0");
+    const day = dateNow.getDate().toString().padStart(2, "0");
+    const month = dateNow.getMonth().toString().padStart(2, "0");
+    const year = dateNow.getFullYear().toString().padStart(2, "0");
+
+    console.log(`${hour}:${minute}:${second} ${day}.${month}.${year}`)
+
+}
