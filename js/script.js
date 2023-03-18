@@ -19,3 +19,22 @@
 	console.log(newDate); 
 
 }
+
+{
+    // TASK 3
+    console.log("\n");
+
+    const str = "Я учу javascript!";
+
+    const substr1 = str.substr(2,3);
+    const substring1 = str.substring(2,5);
+    const slice1 = str.slice(2,5);
+
+    const substr2 = str.substr(6,10);
+    const substring2 = str.substring(6,16);
+    const slice2 = str.slice(6,16);
+
+    console.log(substr1, substring1, slice1);
+    console.log(substr2, substring2, slice2);
+
+}
