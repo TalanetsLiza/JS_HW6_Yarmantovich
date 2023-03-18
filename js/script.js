@@ -38,3 +38,17 @@
     console.log(substr2, substring2, slice2);
 
 }
+
+{
+    // TASK 4
+    console.log("\n");
+
+    const arr = [4, 2, 5, 19, 13, 0, 10];
+    let sum = 0;
+
+    for(let i = 0; i < arr.length; i++) {
+        sum += Math.pow(arr[i], 3);
+    }
+    console.log(Math.sqrt(sum));
+    
+}
