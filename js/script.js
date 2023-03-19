@@ -100,3 +100,13 @@
 
     console.log(regex.test(tel));
 }
+
+{
+    // TASK 9
+    console.log("\n");
+
+    const email = "adsdfsd@mail.ru";
+    const regex = /^[a-zA-Z]{1}[a-zA-Z0-9]+@[\w\.\-]+\.[a-z]{2,11}$/;
+
+    console.log(regex.test(email));
+}
