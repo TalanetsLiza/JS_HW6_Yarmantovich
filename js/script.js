@@ -90,3 +90,13 @@
     console.log(regex);
 
 }
+ 
+{
+    // TASK 8
+    console.log("\n");
+
+    const tel = "+333(27)3987419";
+    const regex = /^\+\d{1,3}\(\d{2,3}\)\d{7}$/;
+
+    console.log(regex.test(tel));
+}
