@@ -110,3 +110,40 @@
 
     console.log(regex.test(email));
 }
+
+{
+    // TASK 10
+    console.log("\n");
+
+    // Вариант 1 
+
+    const str = "https://tech.onliner.by/2018/04/26/smart-do-200/?utm_source=main_tile&utm_medium=smartdo200#zag3";
+
+    function getUrlParts(str) {
+        const url = new URL(str); 
+        const urlParts = [
+            url.origin,
+            url.pathname,
+            url.search.substring(1),
+            url.hash.substring(1),
+        ];
+        return urlParts;
+    }
+
+    // Вариант 2
+
+    function getUrlPartsByRegex(str) {
+        const matches = str.match(/(^https?:\/\/[\w\.]+)(\/[\w\.\-\/]+\/?)\??([\w\.\-\_\&\=]+)#?(.*)/);
+        return [
+            matches[1],
+            matches[2],
+            matches[3],
+            matches[4],
+        ];
+    }
+
+    const urlParts = getUrlParts(str);
+    console.log(urlParts);
+    const urlParts2 = getUrlPartsByRegex(str);
+    console.log(urlParts2);
+}
